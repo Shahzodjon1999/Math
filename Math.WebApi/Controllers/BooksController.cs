@@ -21,6 +21,7 @@ namespace Math.WebApi.Controllers
         public ActionResult<IEnumerable<Book>> Get()
         {
             var items = _service.GetAll();
+
             return Ok(items);
         }
 
