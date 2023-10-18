@@ -20,13 +20,10 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release
 
-
-test:
+  test:
     needs: build
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
     - name: Setup .NET 6
       uses: actions/setup-dotnet@v1
       with:
