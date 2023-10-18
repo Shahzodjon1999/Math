@@ -43,9 +43,9 @@ namespace Math.Tests
             var GetBook = resultTest.Result as OkObjectResult;
 
             var resName = GetBook.Value as Book;
-            
 
-            Assert.Equal("The Lessons of History", resName.Title)
+
+            Assert.Equal("The Lessons of History", resName.Title);
             //
 
 
